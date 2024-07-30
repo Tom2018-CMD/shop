@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package goods;
+
+option go_package = "./proto/goods";
+
+service Goods {
+	rpc GetGoods(GetGoodsRequest) returns (GetGoodsResponse) {}
+
+}
+
+message GoodsModel {
+	string title =1;
+	string subTitle =2;
+	string goodsSn =3;
+	int32 cateId   =4;
+	int64 clickCount=5;
+	int32 goodsNumber =6;
+	double price =7;
+	int64 sort =8;
+	int32 status  =9;
+	int64 addTime =10;
+}
+
+message GetGoodsRequest {
+	int64 page =1;
+	int64 pageSize=2;
+}
+message GetGoodsResponse {
+	repeated GoodsModel GoodsList =1;
+}
+

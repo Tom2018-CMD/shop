@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c545c08c-0993-468d-841c-db4b3d81a8a2" name="aliyun">
+        <fileTransfer rootFolder="/root/goproject/src/shop" accessType="SFTP" host="47.115.33.155" port="22" sshConfigId="ec9fdb8d-f3a6-4bfc-959b-cd9e193d074a" sshConfig="root@47.115.33.155:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
