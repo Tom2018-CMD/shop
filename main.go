@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/sessions"
-	"github.com/gin-contrib/sessions/cookie"
+	"github.com/gin-contrib/sessions/redis"
 	"github.com/gin-gonic/gin"
 	"html/template"
 	"shop/models"
@@ -23,7 +23,7 @@ type Article struct {
 func main() {
 
 	r := gin.Default()
-	r.GET()
+	//r.GET()
 	//配置gin允许跨域请求
 	//r.Use(cors.Default())
 	f := cors.New(cors.Config{
@@ -47,11 +47,12 @@ func main() {
 	r.LoadHTMLGlob("templates/**/**/*")
 	r.Static("/static", "./static")
 
-	store := cookie.NewStore([]byte("secret"))
-	r.Use(sessions.Sessions("mysession", store))
-
-	//store, _ := redis.NewStore(10, "tcp", "localhost:6379", "", []byte("secret"))
+	//store := cookie.NewStore([]byte("secret"))
 	//r.Use(sessions.Sessions("mysession", store))
+
+	//使用中间件，因为每个context对应的上下文不同，每次来路由都需要执行这个session初始化，是针对不同的context
+	store, _ := redis.NewStore(10, "tcp", "localhost:6379", "", []byte("secret"))
+	r.Use(sessions.Sessions("mysession", store))
 
 	routers.AdminRoutersInit(r)
 

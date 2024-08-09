@@ -17,6 +17,8 @@ type ManagerController struct {
 
 func (con ManagerController) Index(c *gin.Context) {
 
+	fmt.Println("======================")
+	fmt.Printf("%p\n", c.Request)
 	//managerList := []models.Manager{}
 	//models.DB.Preload("Role").Find(&managerList)
 	managerSrv := pbManager.NewRbacManagerService("rbac", models.MicroRbacClient)

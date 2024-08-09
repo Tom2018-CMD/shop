@@ -2,6 +2,7 @@ package admin
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"shop/models"
 
@@ -15,6 +16,10 @@ type MainController struct {
 }
 
 func (con MainController) Index(c *gin.Context) {
+
+	fmt.Println("======================")
+	fmt.Printf("%p\n", c.Request)
+
 	//获取userinfo 对应的session
 	session := sessions.Default(c)
 	userinfo := session.Get("userinfo")
@@ -65,6 +70,9 @@ func (con MainController) Index(c *gin.Context) {
 }
 
 func (con MainController) Welcome(c *gin.Context) {
+
+	fmt.Println("======================")
+	fmt.Printf("%p\n", c.Request)
 	c.HTML(http.StatusOK, "admin/main/welcome.html", gin.H{})
 }
 

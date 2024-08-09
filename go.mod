@@ -10,19 +10,19 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/go-micro/plugins/v4/client/grpc v1.2.1
 	github.com/go-micro/plugins/v4/registry/consul v1.2.1
-	github.com/gomarkdown/markdown v0.0.0-20240419095408-642f0ee99ae2
+	github.com/gomarkdown/markdown v0.0.0-20240730141124-034f12af3bf6
 	github.com/hunterhug/go_image v1.0.1
 	github.com/objcoding/wxpay v1.0.6
-	github.com/redis/go-redis/v9 v9.5.1
-	github.com/sirupsen/logrus v1.9.3
+	github.com/redis/go-redis/v9 v9.6.1
+	github.com/sirupsen/logrus v1.9.0
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
-	github.com/smartwalle/alipay/v3 v3.2.21
+	github.com/smartwalle/alipay/v3 v3.2.22
 	github.com/stretchr/testify v1.9.0
 	go-micro.dev/v4 v4.11.0
 	google.golang.org/protobuf v1.34.1
-	gopkg.in/ini.v1 v1.67.0
-	gorm.io/driver/mysql v1.5.6
-	gorm.io/gorm v1.25.10
+	gopkg.in/ini.v1 v1.62.0
+	gorm.io/driver/mysql v1.5.7
+	gorm.io/gorm v1.25.11
 )
 
 require (
@@ -32,6 +32,7 @@ require (
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
 	github.com/bitly/go-simplejson v0.5.0 // indirect
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
+	github.com/boj/redistore v0.0.0-20180917114910-cd5dcc76aeff // indirect
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
@@ -60,6 +61,7 @@ require (
 	github.com/gobwas/ws v1.0.4 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/gomodule/redigo v2.0.0+incompatible // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/gorilla/context v1.1.2 // indirect
 	github.com/gorilla/handlers v1.5.1 // indirect
@@ -94,6 +96,7 @@ require (
 	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/rogpeppe/go-internal v1.12.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sergi/go-diff v1.1.0 // indirect
 	github.com/smartwalle/ncrypto v1.0.4 // indirect
@@ -106,13 +109,13 @@ require (
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	golang.org/x/arch v0.8.0 // indirect
 	golang.org/x/crypto v0.23.0 // indirect
-	golang.org/x/mod v0.17.0 // indirect
+	golang.org/x/mod v0.9.0 // indirect
 	golang.org/x/net v0.25.0 // indirect
-	golang.org/x/sync v0.7.0 // indirect
+	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.20.0 // indirect
-	golang.org/x/text v0.16.0 // indirect
-	golang.org/x/time v0.5.0 // indirect
-	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
+	golang.org/x/text v0.15.0 // indirect
+	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba // indirect
+	golang.org/x/tools v0.7.0 // indirect
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
 	google.golang.org/grpc v1.53.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
